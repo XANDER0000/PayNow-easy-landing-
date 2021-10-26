@@ -1,0 +1,136 @@
+// main: ../style.less
+
+.intro {
+    background: url("../images/intro/bg.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 100px;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        content: url("../images/intro/blur_dots.png");
+    }
+
+    @media @mobile {
+        height: 100%;
+    }
+}
+
+.intro__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 130px 0 130px 0;
+
+    @media @mobile {
+        padding: 100px 0 70px 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.intro__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 580px;
+    z-index: 1;
+
+    @media @mobile {
+        align-items: center;
+        text-align: center;
+        max-width: none;
+    }
+}
+
+.intro__content_title {
+    font-family: 'black';
+    font-size: 86px;
+    line-height: 115%;
+    color: #161828;
+    margin-bottom: 20px;
+
+    @media @tablet{
+        font-size: 39.06px;
+        font-weight: 600;
+    }
+}
+
+.intro__content_text {
+    font-family: book;
+    font-size: 18px;
+    line-height: 156%;
+    color: #646679;
+    margin-bottom: 50px;
+}
+
+.intro__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    max-width: 489px;
+    color: #fff;
+
+    margin: 26px 0 35px 0;
+}
+
+.intro__img {
+    margin-left: 39px;
+    z-index: 1;
+
+    img {
+        height: auto;
+    width: 100%;
+    }
+
+    @media @mobile {
+        display: none;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        max-width: 535px;
+    }
+
+    &--2 {
+        display: none;
+
+        @media @mobile {
+            display: block;
+        }
+    }
+}
+
+.intro__buttons {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 490px) {
+        flex-direction: column;
+    }
+}
+
+.intro__buttons_wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+
+    @media (max-width: 490px) {
+        margin-top: 20px;
+    }
+}
+
+.intro__buttons_wrapper_text {
+    margin-left: 20px;
+    font-family: medium;
+    font-size: 16px;
+    line-height: 20px;
+    color: #161828;
+}

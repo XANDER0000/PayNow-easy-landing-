@@ -1,0 +1,34 @@
+// main: ../style.less
+
+.sponsor {
+    margin-bottom: 100px;
+    @media @mobile {
+        margin-bottom: 70px;
+    }
+}
+
+.sponsor__content {
+    display: flex;
+    justify-content: center;
+    margin: 0 -15px;
+
+    @media (max-width: 1400px) {
+        flex-wrap: wrap;
+    }
+}
+
+.sponsor__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 25px rgba(193, 201, 205, 0.25);
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.sponsor__item_img {
+    padding: 35px 30px;
+}

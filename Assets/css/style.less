@@ -1,0 +1,69 @@
+// compress: true
+
+@font-face {
+    font-family: "book";
+    src: url(../fonts/CircularStd-Book.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "medium";
+    src: url(../fonts/CircularStd-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "bold";
+    src: url(../fonts/CircularStd-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "black";
+    src: url(../fonts/CircularStd-Black.ttf) format('truetype');
+}
+
+
+@import "vars";
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+
+    font-family: book;
+
+    font-size: 16px;
+    color: @black;
+    -webkit-font-smoothing: antialiased;
+
+    &.no-scroll {
+        overflow-y: hidden;
+    }
+}
+
+h1, h2, h3, h4, h4, h5 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* Blocks ======================*/
+@import "blocks/header.less";
+@import "blocks/container.less";
+@import "blocks/btn.less";
+@import "blocks/intro.less";
+@import "blocks/cards.less";
+@import "blocks/work.less";
+@import "blocks/sponsor.less";
+@import "blocks/download.less";
+@import "blocks/features.less";
+@import "blocks/support.less";
+@import "blocks/footer.less";
+
+
+@import "helpers";

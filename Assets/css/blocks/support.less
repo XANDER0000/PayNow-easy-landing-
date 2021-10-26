@@ -1,0 +1,47 @@
+// main: ../style.less
+
+.support {
+    background: url("../images/support/bg.png") no-repeat;
+    background-size: cover;
+    padding: 130px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.support__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1100px) {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.support__content {
+
+    @media (max-width: 1100px) {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+.support__content_title {
+    font-size: 52px;
+    font-family: black;
+    line-height: 66px;
+    color: #fff;
+    margin-bottom: 25px;
+
+    @media (max-width: 600px) {
+        font-size: 44px;
+    }
+}
+
+.support__content_text {
+    font-size: 18px;
+    font-family: book;
+    line-height: 23px;
+    color: #fff;
+}
